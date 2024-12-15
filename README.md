@@ -23,4 +23,4 @@ To run this project locally, follow the steps below:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/paradise-nursery.git
+git clone https://github.com/saswat-5/paradise-nursery.git
