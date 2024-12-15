@@ -1,19 +1,3 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
-}
-
-body {
-  background-color: #f0f5f5;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-  padding-top: 60px; /* To make space for fixed header */
-}
-
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -23,8 +7,11 @@ body {
   background-color: #28a745;
   color: white;
   padding: 15px 20px;
-  text-align: center;
+  text-align: left;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar h1 {
@@ -32,13 +19,13 @@ body {
 }
 
 .navbar nav {
-  margin-top: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar a {
   color: white;
   font-size: 1.2rem;
-  margin: 0 20px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -61,7 +48,7 @@ body {
 .landing-page h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #ff6f61;
+  color: #34a749;
 }
 
 .landing-page p {
@@ -70,7 +57,7 @@ body {
 }
 
 .get-started-button {
-  background-color: #ff6f61;
+  background-color: #34a749;
   color: white;
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -81,26 +68,37 @@ body {
 }
 
 .get-started-button:hover {
-  background-color: #e05d4e;
+  background-color: #34a749;
 }
 
 /* Product Page */
+/* Product Page styles */
 .product-page {
-  padding: 50px 20px;
-  text-align: center;
-  margin-top: 60px; /* Adjusted for navbar */
+  padding: 20px;
 }
 
-.product-page h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #28a745;
+.category-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h3 {
+  text-align: center;
+  color: #16a085;
 }
 
 .product-listing {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+}
+
+.product-listing .category-section {
+  margin-top: 20px;
 }
 
 .plant-card {
@@ -137,7 +135,7 @@ body {
 }
 
 .plant-card button {
-  background-color: #ff6f61;
+  background-color: #34a749;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -153,7 +151,7 @@ body {
 }
 
 .plant-card button:hover {
-  background-color: #e05d4e;
+  background-color: #34a749;
 }
 
 /* Cart Page */
@@ -166,7 +164,7 @@ body {
 .cart-page h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #ff6f61;
+  color: #34a749;
 }
 
 .cart-items {
@@ -205,7 +203,7 @@ body {
 }
 
 .cart-item button {
-  background-color: #ff6f61;
+  background-color: #609e58;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -217,7 +215,7 @@ body {
 }
 
 .cart-item button:hover {
-  background-color: #e05d4e;
+  background-color: #3baa6c;
 }
 
 .cart-summary {

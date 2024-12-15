@@ -34,7 +34,7 @@ const CartPage = () => {
               <img src={item.image} alt={item.name} />
               <div>
                 <h3>{item.name}</h3>
-                <p>${item.price}</p>
+                <p>₹{item.price}</p>
                 <div>
                   <button
                     onClick={() =>
@@ -59,7 +59,7 @@ const CartPage = () => {
         </div>
       )}
       <div className="cart-summary">
-        <p>Total: ${total.toFixed(2)}</p>
+        <p>Total: ₹{total.toFixed(2)}</p>
         <button>Continue Shopping</button>
         <button>Checkout</button>
       </div>

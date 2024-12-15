@@ -10,7 +10,7 @@ const CartItem: React.FC<any> = ({
     <div className="cart-item">
       <img src={item.image} alt={item.name} />
       <h3>{item.name}</h3>
-      <p>${item.price}</p>
+      <p>₹{item.price}</p>
       <div className="quantity-controls">
         <button onClick={decreaseQuantity}>-</button>
         <span>{item.quantity}</span>
